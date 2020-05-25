@@ -72,9 +72,9 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.edit("Removed image's Background in {} seconds, powered by @XtraTgBot".format(ms))
+        await event.edit("Removed image's Background in {} seconds, powered by [@whi5tLe_bL0w3R](tg://some_unsupported_feature)".format(ms))
     else:
-        await event.edit("ReMove.BG API returned Errors. Please report to @XtraTgBot\n`{}".format(output_file_name.content.decode("UTF-8")))
+        await event.edit("API returned Errors.\n`{}".format(output_file_name.content.decode("UTF-8")))
 
 
 # this method will call the API, and return in the appropriate format
